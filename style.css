@@ -1,0 +1,85 @@
+.my-gallery
+{
+    overflow: hidden;
+
+    width: 400px;
+    margin: 0 auto;
+}
+
+.swiper-container
+{
+    position: relative;
+}
+
+.swiper-wrapper
+{
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+
+    height: 200px;
+
+    background: #ccc;
+
+    transition: transform .2s ease-out;
+}
+
+.swiper-slide
+{
+    width: 100%;
+
+    flex-shrink: 0;
+}
+
+.swiper-controls
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    user-select: none;
+}
+
+.swiper-button
+{
+    position: absolute;
+
+    width: 30px;
+    height: 100%;
+
+    cursor: pointer;
+}
+
+.swiper-button:before
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+
+    background: rgba(0,0,0,.2) no-repeat center url(assets/arrow.svg);
+
+    transition: background .2s ease-out;
+}
+
+.swiper-button:hover:before
+{
+    background-color: rgba(0,0,0,.3);
+}
+
+.swiper-button-prev:before
+{
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.swiper-button-next
+{
+    right: 0;
+}

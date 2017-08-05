@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="swiper-container my-gallery">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="http://lorempixel.com/400/200/?a" alt=""/></div>
+            <div class="swiper-slide"><img src="http://lorempixel.com/400/200/?b" alt=""/></div>
+            <div class="swiper-slide"><img src="http://lorempixel.com/400/200/?c" alt=""/></div>
+            <div class="swiper-slide"><img src="http://lorempixel.com/400/200/?d" alt=""/></div>
+            <div class="swiper-slide"><img src="http://lorempixel.com/400/200/?e" alt=""/></div>
+        </div>
+        <div class="swiper-controls">
+            <div class="swiper-button swiper-button-prev"></div>
+            <div class="swiper-button swiper-button-next"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+        var swiper = new Swiper({
+            container: '.swiper-container',
+            hasControls: true
+        });
+    </script>
+
+</body>
+</html>
